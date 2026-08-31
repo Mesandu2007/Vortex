@@ -1,0 +1,47 @@
+# ==========================================
+# SPRING BOOT / JAVA
+# ==========================================
+
+Backend/target/
+Backend/.idea/
+Backend/*.iml
+
+# Local Spring Boot configuration
+Backend/src/main/resources/application.properties
+
+
+# ==========================================
+# NEXT.JS
+# ==========================================
+
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+
+# ==========================================
+# IDE
+# ==========================================
+
+.idea/
+*.iml
+
+
+# ==========================================
+# OS
+# ==========================================
+
+.DS_Store
+Thumbs.db
+
+
+# ==========================================
+# LOGS
+# ==========================================
+
+*.log
