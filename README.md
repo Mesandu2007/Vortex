@@ -646,6 +646,18 @@ Cast Vote
                          Vote Saved
 ```
 
+Screenshots
+<img width="1891" height="897" alt="Admin Login" src="https://github.com/user-attachments/assets/0dab8950-2349-4bfe-a469-23c8558a89fe" />
+
+<img width="1897" height="902" alt="Student Login" src="https://github.com/user-attachments/assets/f4d50ddc-3dcc-4373-ac69-9343e7d43b3c" />
+
+<img width="1897" height="902" alt="Student Login" src="https://github.com/user-attachments/assets/f5b32ebe-499b-4278-bde9-1a567b3bf199" />
+
+<img width="1896" height="905" alt="Admin Election Detailes" src="https://github.com/user-attachments/assets/535c5529-437a-4e2f-a3ea-03cbb9c1f791" />
+
+<img width="1896" height="905" alt="Admin Election Detailes" src="https://github.com/user-attachments/assets/5470b32d-4f12-4106-918e-add1875333fb" />
+
+
 ---
 
 # 🎯 Project Goals
