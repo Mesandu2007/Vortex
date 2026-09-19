@@ -195,9 +195,10 @@ as a unique combination.
 └─────────────────────────────┘
 ```
 ---
-# ERD
-```text
-<img width="2359" height="3150" alt="university_voting_erd" src="https://github.com/user-attachments/assets/d5081d51-266a-4447-b26a-85b7b15bfd12" />
+
+# 🗺️ ERD
+
+<img width="800" alt="University Voting System ERD" src="https://github.com/user-attachments/assets/d5081d51-266a-4447-b26a-85b7b15bfd12" />
 
 ---
 
