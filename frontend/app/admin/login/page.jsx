@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -7,7 +6,6 @@ import { useRouter } from "next/navigation";
 import {
     loginAdmin
 } from "@/app/services/admin/authentication";
-
 
 export default function AdminLoginPage() {
 
@@ -55,14 +53,25 @@ export default function AdminLoginPage() {
 
             if (data.token) {
 
+                // Store JWT
                 localStorage.setItem(
                     "token",
                     data.token
                 );
 
-            }
+                // Store Admin role
+                localStorage.setItem(
+                    "role",
+                    "ADMIN"
+                );
 
-            router.push("/admin/dashboard");
+                router.push("/admin/dashboard");
+
+            } else {
+
+                setError("Login failed. No token received.");
+
+            }
 
         } catch (err) {
 
@@ -227,6 +236,4 @@ export default function AdminLoginPage() {
         </div>
 
     );
-
 }
-

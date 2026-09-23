@@ -1,9 +1,11 @@
-
 "use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
+import {
+    GoogleOAuthProvider,
+    GoogleLogin
+} from "@react-oauth/google";
 
 import {
     loginUserWithGoogle
@@ -15,24 +17,18 @@ export default function UserLoginPage() {
     const router = useRouter();
 
     const [loading, setLoading] = useState(false);
-
     const [error, setError] = useState("");
 
 
     const handleGoogleSuccess = async (credentialResponse) => {
-
-
-
 
         try {
 
             setLoading(true);
             setError("");
 
-
             const idToken =
                 credentialResponse.credential;
-
 
             console.log(
                 "Google ID Token:",
@@ -64,9 +60,16 @@ export default function UserLoginPage() {
             }
 
 
+            // Store JWT
             localStorage.setItem(
-                "usertoken",
+                "token",
                 data.token
+            );
+
+            // Store user role
+            localStorage.setItem(
+                "role",
+                "USER"
             );
 
 
@@ -88,6 +91,7 @@ export default function UserLoginPage() {
                 error.message ||
                 "Google login failed. Please use your IIT account."
             );
+
 
         } finally {
 
@@ -228,5 +232,3 @@ export default function UserLoginPage() {
     );
 
 }
-
-

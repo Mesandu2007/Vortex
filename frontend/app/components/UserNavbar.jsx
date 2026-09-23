@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -49,9 +48,12 @@ export default function UserNavbar() {
 
     const handleLogout = () => {
 
+        // Remove authentication data
         localStorage.removeItem("token");
+        localStorage.removeItem("role");
 
-        router.push("/user/login");
+        // Redirect to user login
+        router.replace("/user/login");
 
     };
 
@@ -83,7 +85,6 @@ export default function UserNavbar() {
                     </Link>
 
 
-
                     <div className="hidden md:flex items-center gap-8">
 
                         <Link
@@ -102,7 +103,6 @@ export default function UserNavbar() {
                         </Link>
 
                     </div>
-
 
 
                     <div className="hidden md:flex items-center gap-5">
@@ -134,8 +134,6 @@ export default function UserNavbar() {
 
                     </div>
 
-
-                    
 
                     <button
                         type="button"
@@ -191,8 +189,6 @@ export default function UserNavbar() {
 
                 </div>
 
-
-            
 
                 {menuOpen && (
 
@@ -257,4 +253,3 @@ export default function UserNavbar() {
     );
 
 }
-

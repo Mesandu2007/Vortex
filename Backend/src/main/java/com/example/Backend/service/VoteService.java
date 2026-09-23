@@ -36,8 +36,7 @@ public class VoteService {
         this.electionRepository = electionRepository;
         this.candidateRepository = candidateRepository;
         this.userRepository = userRepository;
-        this.electionParticipantRepository =
-                electionParticipantRepository;
+        this.electionParticipantRepository =electionParticipantRepository;
     }
 
 
@@ -91,7 +90,7 @@ public class VoteService {
         }
 
 
-        // Check whether user already voted
+        
         if (voteRepository
                 .existsByUserIdAndElectionId(
                         userId,

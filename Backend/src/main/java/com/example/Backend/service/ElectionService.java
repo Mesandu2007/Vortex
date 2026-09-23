@@ -825,29 +825,6 @@ public class ElectionService {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public ElectionDTO.DashboardResponse getAdminDashboard(
             Long adminId
     ) {

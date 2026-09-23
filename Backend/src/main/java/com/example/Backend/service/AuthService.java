@@ -128,7 +128,7 @@ public class AuthService {
                 );
 
 
-        // Get information from Google
+
         String googleId =
                 payload.getSubject();
 
@@ -139,7 +139,7 @@ public class AuthService {
                 (String) payload.get("name");
 
 
-        // Check whether Google email is verified
+
         if(!Boolean.TRUE.equals(
                 payload.getEmailVerified()
         )){

@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -48,9 +47,12 @@ export default function Navbar() {
 
     const handleLogout = () => {
 
-        localStorage.removeItem("usertoken");
+        // Remove authentication data
+        localStorage.removeItem("token");
+        localStorage.removeItem("role");
 
-        router.push("/admin/login");
+        // Go to admin login
+        router.replace("/admin/login");
 
     };
 
@@ -237,4 +239,3 @@ export default function Navbar() {
     );
 
 }
-
