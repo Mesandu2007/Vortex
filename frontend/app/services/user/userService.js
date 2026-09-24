@@ -1,9 +1,6 @@
-
 import axios from "axios";
 
-
 const API_URL = "http://localhost:8080/api";
-
 
 const userApi = axios.create({
 
@@ -26,7 +23,7 @@ const getAuthToken = () => {
         return null;
     }
 
-    return localStorage.getItem("usertoken");
+    return localStorage.getItem("token");
 
 };
 
@@ -38,7 +35,6 @@ const getAuthToken = () => {
 const getAuthHeaders = () => {
 
     const token = getAuthToken();
-
 
     return {
         Authorization: `Bearer ${token}`
@@ -63,7 +59,6 @@ export const loginUserWithGoogle = async (
             }
         );
 
-
     return response.data;
 
 };
@@ -82,7 +77,6 @@ export const getUserDashboard = async () => {
                 headers: getAuthHeaders()
             }
         );
-
 
     return response.data;
 
@@ -106,7 +100,6 @@ export const joinElection = async (
             }
         );
 
-
     return response.data;
 
 };
@@ -125,7 +118,6 @@ export const getUserProfile = async () => {
                 headers: getAuthHeaders()
             }
         );
-
 
     return response.data;
 
@@ -152,8 +144,6 @@ export const castVote = async (
             }
         );
 
-
     return response.data;
 
 };
-
