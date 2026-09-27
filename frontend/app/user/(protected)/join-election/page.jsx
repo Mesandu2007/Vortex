@@ -237,7 +237,7 @@ export default function JoinElectionPage() {
 
             setVoteError(
                 error.response?.data?.message ||
-                "Failed to submit your vote."
+                "Cannot Vote Twice."
             );
 
         } finally {

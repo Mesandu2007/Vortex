@@ -509,14 +509,14 @@ public class ElectionService {
                         );
 
 
-        // Count total votes
+
         long totalVotes =
                 voteRepository.countByElectionId(
                         electionId
                 );
 
 
-        // Create response
+
         ElectionDTO.ElectionStatsResponse response =
                 new ElectionDTO.ElectionStatsResponse();
 
@@ -834,8 +834,6 @@ public class ElectionService {
         List<Election> elections =
                 electionRepository.findByAdminId(adminId);
 
-
-        // Count elections
 
         long totalElections =
                 elections.size();
