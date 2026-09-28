@@ -1,4 +1,4 @@
-package com.example.Backend.config;
+package com.example.*B*ackend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,10 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:3000")
+                List.of(
+                        "http://localhost:3000",
+                        "https://vortex-g9tqhqo18-mesandus-projects-a6215d5c.vercel.app"
+                )
         );
 
         configuration.setAllowedMethods(
